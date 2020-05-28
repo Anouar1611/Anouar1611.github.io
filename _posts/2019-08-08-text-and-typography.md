@@ -19,7 +19,6 @@ tags: [Spring AOP]
 
 # What means AOP (Aspect Oriented Object) ?
 
-***
 
  *Aspect Oriented Object* is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.I will explain this separation on the next step. Briefly , it does so by adding additional behavior to existing code without modification of the code itself.
  
@@ -30,7 +29,7 @@ tags: [Spring AOP]
   
 # Spring AOP Overview ?
 
-***
+
 
   For more explanation , most of the enterprise applications have some common crosscutting concerns that are applicable to different types of Objects and modules. For being clear , this crosscutting concerns can be a methods that are repeated on your different objects . Some of the common crosscutting concerns are logging, transaction management, data validation, etc..
   
@@ -46,7 +45,7 @@ tags: [Spring AOP]
   
 # What problems solve AOP for devs ?
 
-***
+
  
   The most important functionality is AOP provides the pluggable way to dynamically add the additional concern before, after or around the actual logic.
   So , actually AOP comes to :
@@ -68,7 +67,7 @@ tags: [Spring AOP]
 
 # Core AOP Concepts 
 
-***
+
  
  Spring AOP consists of 7 core concepts which are depicted in the following diagram:
  
@@ -107,15 +106,16 @@ tags: [Spring AOP]
   
  ---
   
-  *So , Having understood this, let’s move further and see what are the steps required to create an AOP*
-   
- ---
+  
   
   
   
 # Steps to create AOP Example
   
-  ***
+  
+  *So , Having understood this, let’s move further and see what are the steps required to create an AOP*
+  
+ ---
   
   
    ![Desktop View]({{ "/assets/img/sample/steps.jpg"}})
@@ -124,7 +124,7 @@ tags: [Spring AOP]
    
 # AOP Advice Types : 
    
-***
+
   
   Based on the execution strategy of advice, they are of the following types.
   
@@ -146,7 +146,7 @@ tags: [Spring AOP]
    
 # Spring AOP :
   
-***
+
   
   > Spring AOP is proxy-based. Spring uses either JDK proxies (default) or CGLIB proxies to create the proxy for a given target bean. At runtime, calls to the target object are intercepted by the proxy, and advices that apply to the target method are executed by the proxy.
 In Spring AOP, a target object is a bean instance registered with the spring container.
@@ -180,7 +180,7 @@ public class Circle {
 }
 ```
 
-**Triangle.java**
+***Triangle.java***
 
 
 ```java
@@ -326,7 +326,11 @@ Inside getName of Circle
 
 That’s all for Spring AOP Example Tutorial, and you have seen how  AOP encapsulates all of these cross-cutting concerns into something called an Aspect. I hope you learned the basics of AOP with Spring and can learn more from examples.
 
+Here is the link of the Demo if you want to test it https://github.com/Anouar1611/AopDemo.git
+
 Wish you that you enjoy this blog !!
+
+
 
 
 
