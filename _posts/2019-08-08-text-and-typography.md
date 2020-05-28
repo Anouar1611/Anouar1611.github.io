@@ -328,3 +328,7 @@ That’s all for Spring AOP Example Tutorial, and you have seen how  AOP encapsu
 
 Wish you that you enjoy this blog !!
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0"></script>
+
+<div class="fb-comments" data-href="https://anouar1611.github.io/" data-numposts="5" data-width=""></div>
