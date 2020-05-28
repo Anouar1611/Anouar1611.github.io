@@ -1,7 +1,7 @@
 ---
 title: Spring AOP Introduction and terminologies of AOP
 author: Anouar Asmai
-date: 2020-05-27 11:33:00 +0800
+date: 2020-05-28 01:33:00 +0800
 categories: [Blogging, Demo]
 tags: [Spring AOP]
 ---
@@ -66,36 +66,36 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
  
   ***Aspect***:
   
-  A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented using regular classes (the schema-based approach) or regular classes annotated with the @Aspect annotation
+     A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented using regular classes (the schema-based approach) or regular classes annotated with the @Aspect annotation
   
   ***Join point***: 
   
-  A point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
+      A point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
   
   ***Pointcut***: 
   
-  A pointcut expression identifies the join point through some sort of expression matching.
+       A pointcut expression identifies the join point through some sort of expression matching.
   
   ***Advice***: 
   
-  This is the block of code that you execute at a join point that was selected by a pointcut. So It is your cross-cutting concern method that we’re applying to a joint point in our system.
+       This is the block of code that you execute at a join point that was selected by a pointcut. So It is your cross-cutting concern method that we’re applying to a joint point in our system.
   
   ***Target Object***:
   
-  These are the objects on which advices are applied. In Spring AOP, a subclass is created at runtime where the target method is overridden and advices are included based on their configuration.
+        These are the objects on which advices are applied. In Spring AOP, a subclass is created at runtime where the target method is overridden and advices are included based on their configuration.
   
   ***AOP proxy***:
   
-  Spring AOP implementation uses JDK dynamic proxy to create the Proxy classes with target classes and advice invocations, these are called AOP proxy classes. We can also use CGLIB proxy by adding it as the dependency in the Spring AOP project.
+         Spring AOP implementation uses JDK dynamic proxy to create the Proxy classes with target classes and advice invocations, these are called AOP proxy classes. We can also use CGLIB proxy by adding it as the dependency in the Spring AOP project.
   
   ***Weaving***:
   
-  Weaving is the process of linking an aspect with other application types or objects to create an advised object.
+          Weaving is the process of linking an aspect with other application types or objects to create an advised object.
   
   
   
   
-  <h3 data-toc-skip>So , Having understood this, let’s move further and see what are the steps required to create an AOP</h3>
+ #### So , Having understood this, let’s move further and see what are the steps required to create an AOP ####
    
   
   
