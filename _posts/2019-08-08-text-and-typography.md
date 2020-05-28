@@ -6,7 +6,14 @@ categories: [Blogging, Demo]
 tags: [Spring AOP]
 ---
 
+
+![Aop View]({{ "/assets/img/sample/aop.png"}})
+
+
+
 # Introduction 
+
+---
 
    Spring Framework is developed on two core concepts – Dependency Injection and Aspect Oriented Programming ( Spring AOP). We'll discuss  the DI (Dependency Injection) in the near future .So, in this tutorial, we’ll introduce AOP (Aspect Oriented Programming) with Spring and try to understanding how we can start using this powerful tool in practical scenarios. So let's strated !!
 
@@ -100,13 +107,13 @@ tags: [Spring AOP]
   
  ---
   
-  *So , Having understood this, let’s move further and see what are the steps required to create an AOP *
+  *So , Having understood this, let’s move further and see what are the steps required to create an AOP*
    
  ---
   
   
   
-  # Steps to create AOP Example
+# Steps to create AOP Example
   
   ***
   
@@ -122,15 +129,15 @@ tags: [Spring AOP]
   Based on the execution strategy of advice, they are of the following types.
   
 
-  *Before Advice:* 
+  ***Before Advice:*** 
    
    - These advices runs before the execution of join point methods. We can use @Before annotation to mark an advice type as Before advice.
    
-  *After (finally) Advice:*
+  ***After (finally) Advice:***
    
    - An advice that gets executed after the join point method finishes executing, whether normally or by throwing an exception. We can create after advice using @After annotation.
    
-   *Around Advice :* 
+   ***Around Advice :*** 
    
    - Annotation specifies that the advice is executed both before and after the execution of the target method, and so on.
    
