@@ -26,13 +26,15 @@ avatar: /assets/img/sample/napa.jpg   # support internet resources
 
 github:
   username: Anouar1611             # change to your github username
-
-twitter:
-  username: AnouarAsmai            # change to your twitter username
+           # change to your twitter username
 
 linkedin:
   username: anouar-asmai
   
+
+plugins: ['jekyll-twitter-plugin']
+
+
 social:
   name: Anouar Asmai                 # it will shows as the copyright owner in Footer
   email: anouar.asmai0@gmail.com             # change to your email address
@@ -71,7 +73,6 @@ disqus:
   comments: true  # boolean type, the global switch for posts comments.
   shortname: 'anouar asm'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-plugins: ['jekyll-twitter-plugin']
 
 # Prefer color scheme setting, available values:
 #
