@@ -71,6 +71,8 @@ disqus:
   comments: true  # boolean type, the global switch for posts comments.
   shortname: 'anouar asm'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
+plugins:
+  - jekyll-gist
 
 # Prefer color scheme setting, available values:
 #
