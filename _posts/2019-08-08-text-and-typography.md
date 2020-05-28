@@ -339,3 +339,8 @@ Wish you that you enjoy this blog !!
 
 
 <div class="fb-comments" data-href="https://anouar1611.github.io/posts/text-and-typography/" data-numposts="5" data-width=""></div>
+
+
+<div class='jekyll-twitter-plugin' align="center">
+    {% twitter https://twitter.com/AnouarAsmai maxwidth=500 limit=5 %}
+</div>
