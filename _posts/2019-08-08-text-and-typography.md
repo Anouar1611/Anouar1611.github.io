@@ -6,13 +6,19 @@ categories: [Blogging, Demo]
 tags: [Spring AOP]
 ---
 
+
+![Aop View]({{ "/assets/img/sample/aop.png"}})
+
+
+
 # Introduction 
+
+---
 
    Spring Framework is developed on two core concepts – Dependency Injection and Aspect Oriented Programming ( Spring AOP). We'll discuss  the DI (Dependency Injection) in the near future .So, in this tutorial, we’ll introduce AOP (Aspect Oriented Programming) with Spring and try to understanding how we can start using this powerful tool in practical scenarios. So let's strated !!
 
 # What means AOP (Aspect Oriented Object) ?
 
-***
 
  *Aspect Oriented Object* is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.I will explain this separation on the next step. Briefly , it does so by adding additional behavior to existing code without modification of the code itself.
  
@@ -23,7 +29,7 @@ tags: [Spring AOP]
   
 # Spring AOP Overview ?
 
-***
+
 
   For more explanation , most of the enterprise applications have some common crosscutting concerns that are applicable to different types of Objects and modules. For being clear , this crosscutting concerns can be a methods that are repeated on your different objects . Some of the common crosscutting concerns are logging, transaction management, data validation, etc..
   
@@ -39,7 +45,7 @@ tags: [Spring AOP]
   
 # What problems solve AOP for devs ?
 
-***
+
  
   The most important functionality is AOP provides the pluggable way to dynamically add the additional concern before, after or around the actual logic.
   So , actually AOP comes to :
@@ -61,7 +67,7 @@ tags: [Spring AOP]
 
 # Core AOP Concepts 
 
-***
+
  
  Spring AOP consists of 7 core concepts which are depicted in the following diagram:
  
@@ -100,15 +106,16 @@ tags: [Spring AOP]
   
  ---
   
-  *So , Having understood this, let’s move further and see what are the steps required to create an AOP *
-   
+  
+  
+  
+  
+# Steps to create AOP Example
+  
+  
+  *So , Having understood this, let’s move further and see what are the steps required to create an AOP*
+  
  ---
-  
-  
-  
-  # Steps to create AOP Example
-  
-  ***
   
   
    ![Desktop View]({{ "/assets/img/sample/steps.jpg"}})
@@ -117,20 +124,20 @@ tags: [Spring AOP]
    
 # AOP Advice Types : 
    
-***
+
   
   Based on the execution strategy of advice, they are of the following types.
   
 
-  *Before Advice:* 
+  ***Before Advice:*** 
    
    - These advices runs before the execution of join point methods. We can use @Before annotation to mark an advice type as Before advice.
    
-  *After (finally) Advice:*
+  ***After (finally) Advice:***
    
    - An advice that gets executed after the join point method finishes executing, whether normally or by throwing an exception. We can create after advice using @After annotation.
    
-   *Around Advice :* 
+   ***Around Advice :*** 
    
    - Annotation specifies that the advice is executed both before and after the execution of the target method, and so on.
    
@@ -139,7 +146,7 @@ tags: [Spring AOP]
    
 # Spring AOP :
   
-***
+
   
   > Spring AOP is proxy-based. Spring uses either JDK proxies (default) or CGLIB proxies to create the proxy for a given target bean. At runtime, calls to the target object are intercepted by the proxy, and advices that apply to the target method are executed by the proxy.
 In Spring AOP, a target object is a bean instance registered with the spring container.
@@ -173,7 +180,7 @@ public class Circle {
 }
 ```
 
-**Triangle.java**
+***Triangle.java***
 
 
 ```java
@@ -319,5 +326,22 @@ Inside getName of Circle
 
 That’s all for Spring AOP Example Tutorial, and you have seen how  AOP encapsulates all of these cross-cutting concerns into something called an Aspect. I hope you learned the basics of AOP with Spring and can learn more from examples.
 
+Here is the link of the Demo if you want to test it  :  [Demo AOP](https://github.com/Anouar1611/AopDemo.git)
+
 Wish you that you enjoy this blog !!
+
+
+
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0"></script>
+
+
+<div class="fb-comments" data-href="https://anouar1611.github.io/posts/text-and-typography/" data-numposts="5" data-width=""></div>
+
+{% plugin_type twitter_url *options %}
+
+
+{% twitter https://twitter.com/AnouarAsmai maxwidth=500 limit=5 %}
 
