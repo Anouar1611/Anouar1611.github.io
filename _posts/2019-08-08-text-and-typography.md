@@ -6,22 +6,22 @@ categories: [Blogging, Demo]
 tags: [Spring AOP]
 ---
 
-## Introduction 
+# Introduction 
 
-Spring Framework is developed on two core concepts – Dependency Injection and Aspect Oriented Programming ( Spring AOP). We'll discuss  the DI (Dependency Injection) in the near future .So, in this tutorial, we’ll introduce AOP (Aspect Oriented Programming) with Spring and try to understanding how we can start using this powerful tool in practical scenarios. So let's strated !!
+   Spring Framework is developed on two core concepts – Dependency Injection and Aspect Oriented Programming ( Spring AOP). We'll discuss  the DI (Dependency Injection) in the near future .So, in this tutorial, we’ll introduce AOP (Aspect Oriented Programming) with Spring and try to understanding how we can start using this powerful tool in practical scenarios. So let's strated !!
 
-## What means AOP (Aspect Oriented Object) ?
+# What means AOP (Aspect Oriented Object) ?
 
 ***
 
-<h2 data-toc-skip>Aspect Oriented Object</h2>
- Is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.I will explain this separation on the next step. Briefly , it does so by adding additional behavior to existing code without modification of the code itself.
+ *Aspect Oriented Object* is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.I will explain this separation on the next step. Briefly , it does so by adding additional behavior to existing code without modification of the code itself.
  
  
-  This definition seems not to be easy to understand it from the first reading and it's very normal because I'll explain you every part of this concept and a little exemple . Let's go ahead !!
+> This definition seems not to be easy to understand it from the first reading and it's very normal because I'll explain you every part of this concept and a little exemple . Let's go ahead !!
+
   
   
-## Spring AOP Overview ?
+# Spring AOP Overview ?
 
 ***
 
@@ -37,7 +37,7 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
   To be exact , AOP is about encapsulating system-wide concerns or cross-cutting concerns (a concern that is applicable throughout the system and it affects the entire system). logging, security, and data transfer are the concerns which are needed in almost every part of a system.
   
   
-## What problems solve AOP for devs ?
+# What problems solve AOP for devs ?
 
 ***
  
@@ -51,20 +51,22 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
    - Help you avoid repeating code in multiple places..
    
    
+---
 
-#### Let's see the Aspect Oriented Programming's Core Concepts/Terminology ####
+ *Let's see the Aspect Oriented Programming's Core Concepts/Terminology* 
+
+---
 
 
 
-
-## Core AOP Concepts 
+# Core AOP Concepts 
 
 ***
  
  Spring AOP consists of 7 core concepts which are depicted in the following diagram:
  
 
- ![Desktop View]({{ "/assets/img/sample/concepts_aop.png" | relative_url }})
+ ![Desktop View]({{ "/assets/img/sample/concepts_aop.jpg" | relative_url }})
  
  
   ***Aspect***:
@@ -96,45 +98,46 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
    Weaving is the process of linking an aspect with other application types or objects to create an advised object.
   
   
+ ---
   
-  
- #### So , Having understood this, let’s move further and see what are the steps required to create an AOP ####
+  *So , Having understood this, let’s move further and see what are the steps required to create an AOP *
    
+ ---
   
   
   
-  
-  ## Steps to create AOP Example
+  # Steps to create AOP Example
   
   ***
   
   
-   ![Desktop View]({{ "/assets/img/sample/steps.png" | relative_url }})
+   ![Desktop View]({{ "/assets/img/sample/steps.jpg" | relative_url }})
    
    
    
-## AOP Advice Types : 
+# AOP Advice Types : 
    
 ***
   
   Based on the execution strategy of advice, they are of the following types.
   
 
-   ### Before Advice: 
+  *Before Advice:* 
    
-   > These advices runs before the execution of join point methods. We can use @Before annotation to mark an advice type as Before advice.
+   - These advices runs before the execution of join point methods. We can use @Before annotation to mark an advice type as Before advice.
    
-   ### After (finally) Advice:
+  *After (finally) Advice:*
    
-   > An advice that gets executed after the join point method finishes executing, whether normally or by throwing an exception. We can create after advice using @After annotation.
+   - An advice that gets executed after the join point method finishes executing, whether normally or by throwing an exception. We can create after advice using @After annotation.
    
-   ### Around Advice : 
+   *Around Advice :* 
    
-   > annotation specifies that the advice is executed both before and after the execution of the target method, and so on.
+   - Annotation specifies that the advice is executed both before and after the execution of the target method, and so on.
    
    
    
-## Spring AOP :
+   
+# Spring AOP :
   
 ***
   
@@ -142,12 +145,14 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
 In Spring AOP, a target object is a bean instance registered with the spring container.
 
 
-## Spring AOP Example :
+
+# Spring AOP Example :
 
 ***
 
 In this simple example demo, I’ve used Spring AOP to add Logging behavior to a my *ShapeService*’s methods.
 Here is my *ShapeService ,Circle , Triangle* classes and note that the methods annoted by ***@Loggable*** are our pointcut expression in the future :
+
 
 ***Circle.java***
 
