@@ -48,10 +48,11 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
    
    - Allow users to implement custom aspects
    
-   > Help you avoid repeating code in multiple places..
+   - Help you avoid repeating code in multiple places..
+   
    
 
-<h3 data-toc-skip>Let's see the Aspect Oriented Programming's Core Concepts/Terminology</h3>
+#### Let's see the Aspect Oriented Programming's Core Concepts/Terminology ####
 
 
 
@@ -61,36 +62,38 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
 ***
  
  Spring AOP consists of 7 core concepts which are depicted in the following diagram:
+ 
 
  ![Desktop View]({{ "/assets/img/sample/concepts_aop.png" | relative_url }})
  
+ 
   ***Aspect***:
   
-     A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented using regular classes (the schema-based approach) or regular classes annotated with the @Aspect annotation
+   A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented using regular classes (the schema-based approach) or regular classes annotated with the @Aspect annotation
   
   ***Join point***: 
   
-      A point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
+   A point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
   
   ***Pointcut***: 
   
-       A pointcut expression identifies the join point through some sort of expression matching.
+   A pointcut expression identifies the join point through some sort of expression matching.
   
   ***Advice***: 
   
-       This is the block of code that you execute at a join point that was selected by a pointcut. So It is your cross-cutting concern method that we’re applying to a joint point in our system.
+   This is the block of code that you execute at a join point that was selected by a pointcut. So It is your cross-cutting concern method that we’re applying to a joint point in our system.
   
   ***Target Object***:
   
-        These are the objects on which advices are applied. In Spring AOP, a subclass is created at runtime where the target method is overridden and advices are included based on their configuration.
+   These are the objects on which advices are applied. In Spring AOP, a subclass is created at runtime where the target method is overridden and advices are included based on their configuration.
   
   ***AOP proxy***:
   
-         Spring AOP implementation uses JDK dynamic proxy to create the Proxy classes with target classes and advice invocations, these are called AOP proxy classes. We can also use CGLIB proxy by adding it as the dependency in the Spring AOP project.
+   Spring AOP implementation uses JDK dynamic proxy to create the Proxy classes with target classes and advice invocations, these are called AOP proxy classes. We can also use CGLIB proxy by adding it as the dependency in the Spring AOP project.
   
   ***Weaving***:
   
-          Weaving is the process of linking an aspect with other application types or objects to create an advised object.
+   Weaving is the process of linking an aspect with other application types or objects to create an advised object.
   
   
   
