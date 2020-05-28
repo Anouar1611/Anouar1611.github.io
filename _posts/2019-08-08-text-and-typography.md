@@ -66,7 +66,7 @@ tags: [Spring AOP]
  Spring AOP consists of 7 core concepts which are depicted in the following diagram:
  
 
- ![Desktop View]({{ "/assets/img/sample/concepts_aop.jpg" | relative_url }})
+   ![Aop View]({{ "/assets/img/sample/concepts_aop.png"}})
  
  
   ***Aspect***:
@@ -111,7 +111,7 @@ tags: [Spring AOP]
   ***
   
   
-   ![Desktop View]({{ "/assets/img/sample/steps.jpg" | relative_url }})
+   ![Desktop View]({{ "/assets/img/sample/steps.jpg"}})
    
    
    
