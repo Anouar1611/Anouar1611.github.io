@@ -3,7 +3,7 @@ title: Spring AOP Introduction and terminologies of AOP
 author: Anouar Asmai
 date: 2020-05-27 11:33:00 +0800
 categories: [Blogging, Demo]
-tags: [typography]
+tags: [Spring AOP]
 ---
 
 ## Introduction 
@@ -23,10 +23,18 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
   
 ## Spring AOP Overview ?
 
+***
+
   For more explanation , most of the enterprise applications have some common crosscutting concerns that are applicable to different types of Objects and modules. For being clear , this crosscutting concerns can be a methods that are repeated on your different objects . Some of the common crosscutting concerns are logging, transaction management, data validation, etc..
+  
+  
   We can achieve to separate these crosscutting concerns by adding a new class which has this concern in the form of method . But , there is some problems that we can facing using this solution including : too many relationships to the crosscuttting objects !!
+  
+  
   Although , Spring AOP takes out the direct dependency of crosscutting tasks from classes that we can’t achieve through normal object oriented programming model. For example, we can have a separate class for logging but again the functional classes will have to call these methods to achieve logging across the application.
-  To be exact , AOP is about encapsulating system-wide concerns or cross-cutting concerns (a concern that is applicable throughout the system and it affects the entire system). logging, security, and data transfer are the concerns which are needed in almost every part of a system. AOP encapsulates all of these cross-cutting concerns into something called an Aspect.
+  
+  
+  To be exact , AOP is about encapsulating system-wide concerns or cross-cutting concerns (a concern that is applicable throughout the system and it affects the entire system). logging, security, and data transfer are the concerns which are needed in almost every part of a system.
   
   
 ## What problems solve AOP for devs ?
@@ -36,12 +44,17 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
   The most important functionality is AOP provides the pluggable way to dynamically add the additional concern before, after or around the actual logic.
   So , actually AOP comes to :
   
-   > Help you against tightly coupled dependencies in the code by extracting and moving them to an aspect
-   > Allow users to implement custom aspects
+   - Help you against tightly coupled dependencies in the code by extracting and moving them to an aspect
+   
+   - Allow users to implement custom aspects
+   
    > Help you avoid repeating code in multiple places..
    
 
 <h3 data-toc-skip>Let's see the Aspect Oriented Programming's Core Concepts/Terminology</h3>
+
+
+
 
 ## Core AOP Concepts 
 
@@ -49,28 +62,51 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
  
  Spring AOP consists of 7 core concepts which are depicted in the following diagram:
 
- ![Desktop View]({{ "/assets/img/sample/mockup.png" | relative_url }})
+ ![Desktop View]({{ "/assets/img/sample/concepts_aop.png" | relative_url }})
  
-  ### Aspect: 
+  ***Aspect***:
+  
   A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented using regular classes (the schema-based approach) or regular classes annotated with the @Aspect annotation
-  ### Join point: 
+  
+  ***Join point***: 
+  
   A point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
-  ### Pointcut: 
+  
+  ***Pointcut***: 
+  
   A pointcut expression identifies the join point through some sort of expression matching.
-  ### Advice: 
+  
+  ***Advice***: 
+  
   This is the block of code that you execute at a join point that was selected by a pointcut. So It is your cross-cutting concern method that we’re applying to a joint point in our system.
-  ### Target Object: 
+  
+  ***Target Object***:
+  
   These are the objects on which advices are applied. In Spring AOP, a subclass is created at runtime where the target method is overridden and advices are included based on their configuration.
-  ### AOP proxy: 
+  
+  ***AOP proxy***:
+  
   Spring AOP implementation uses JDK dynamic proxy to create the Proxy classes with target classes and advice invocations, these are called AOP proxy classes. We can also use CGLIB proxy by adding it as the dependency in the Spring AOP project.
-  ### Weaving: 
+  
+  ***Weaving***:
+  
   Weaving is the process of linking an aspect with other application types or objects to create an advised object.
   
   
+  
+  
   <h3 data-toc-skip>So , Having understood this, let’s move further and see what are the steps required to create an AOP</h3>
+   
+  
+  
+  
+  
   ## Steps to create AOP Example
   
-   ![Desktop View]({{ "/assets/img/sample/mockup.png" | relative_url }})
+  ***
+  
+  
+   ![Desktop View]({{ "/assets/img/sample/steps.png" | relative_url }})
    
    
    
@@ -79,12 +115,18 @@ Spring Framework is developed on two core concepts – Dependency Injection and 
 ***
   
   Based on the execution strategy of advice, they are of the following types.
+  
 
    ### Before Advice: 
+   
    > These advices runs before the execution of join point methods. We can use @Before annotation to mark an advice type as Before advice.
+   
    ### After (finally) Advice:
+   
    > An advice that gets executed after the join point method finishes executing, whether normally or by throwing an exception. We can create after advice using @After annotation.
+   
    ### Around Advice : 
+   
    > annotation specifies that the advice is executed both before and after the execution of the target method, and so on.
    
    
@@ -101,10 +143,10 @@ In Spring AOP, a target object is a bean instance registered with the spring con
 
 ***
 
-In this simple example demo, I’ve used Spring AOP to add Logging behavior to a my **ShapeService**’s methods.
-Here is my **ShapeService ,Circle , Triangle** classes and note that the methods annoted by @Loggable are our pointcut expression in the future :
+In this simple example demo, I’ve used Spring AOP to add Logging behavior to a my *ShapeService*’s methods.
+Here is my *ShapeService ,Circle , Triangle* classes and note that the methods annoted by ***@Loggable*** are our pointcut expression in the future :
 
-**Circle.java**
+***Circle.java***
 
 ```java
 @Component
@@ -127,6 +169,8 @@ public class Circle {
 
 
 ```java
+
+
 @Component
 public class Triangle {
 
@@ -140,12 +184,18 @@ public class Triangle {
         this.name = name;
     }
 }
+
+
 ```
 
-**ShapeService.java**
+***ShapeService.java***
 
 ```java
- @Autowired
+ 
+@Component
+public class ShapeService { 
+    
+    @Autowired
     private Circle circle;
     @Autowired
     private Triangle triangle;
@@ -167,25 +217,34 @@ public class Triangle {
         this.triangle = triangle;
     }
 }
+
+
 ```
 
-Then , if you want to use AspectJ annotation-style for creating aspects, you need to enable support for using AspectJ annotation-style by annotating the config class with @EnableAspectJAutoProxy. The element also instructs the Spring AOP framework to automatically create AOP proxies for target objects.
 
 
-**ConfigClass.java**
+Then , if you want to use AspectJ annotation-style for creating aspects, you need to enable support for using AspectJ annotation-style by annotating the config class with ***@EnableAspectJAutoProxy*** . The element also instructs the Spring AOP framework to automatically create AOP proxies for target objects.
+
+
+
+***ConfigClass.java***
 
 ```java
+
 @Configuration
 @ComponentScan("Mypackage")
 @EnableAspectJAutoProxy
 public class ConfigClass {
 
 }
+
 ```
  
-Then adding our Aspect named **LoggingAspect** :
+ 
+Then adding our Aspect named *LoggingAspect* :
 
-**LoggingAspect.java**
+
+***LoggingAspect.java***
 
 ```java
 @Aspect
@@ -198,9 +257,11 @@ public class LoggingAspect {
 }
 ```
 
-So , the advice here is the **LoggingAdvice** method .
+So , the advice here is the *LoggingAdvice* method .
 
-AspectJ’s @Before annotation specifies that the advice is executed before the invocation of the target method. It takes an argument for the pointcut expression that will identify the join points. Here the join points are any method that is annotated with @Loggable, the custom annotation I’ve defined:
+
+
+AspectJ’s ***@Before*** annotation specifies that the advice is executed before the invocation of the target method. It takes an argument for the pointcut expression that will identify the join points. Here the join points are any method that is annotated with @Loggable, the custom annotation I’ve defined:
 
 ```java
 
@@ -209,11 +270,15 @@ public @interface Loggable {
 
 ```
 
+
 Finally , here is the main class where I have called the getName of the getCircle method for testing our simple Aspect :  
 
-**MainApp.java**
+
+
+***MainApp.java***
 
 ```java
+
 public class MainApp {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigClass.class);
@@ -225,23 +290,26 @@ public class MainApp {
 
 ```
 
+
 I was working with confugration based Java Annotations configuration because it's more efficient and preformant than the XML configuration , if you're working with the config based XML-configuration , there is no problem to do this config .
+
 
 So , the Output is something like this :
 
 ```console
+
 Inside getCircle
 Running Advice 
 Inside getName of Circle 
+
 ```
 
-## Conclusion
+
+# Conclusion
 
 ***
 
-That’s all for Spring AOP Example Tutorial, I hope you learned the basics of AOP with Spring and can learn more from examples.
+That’s all for Spring AOP Example Tutorial, and you have seen how  AOP encapsulates all of these cross-cutting concerns into something called an Aspect. I hope you learned the basics of AOP with Spring and can learn more from examples.
 
 Wish you that you enjoy this blog !!
-## Reverse Footnote
 
-[^footnote]: The footnote source.
