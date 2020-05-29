@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-> Spring & Java Developer , some skills :
+**Spring & Java Developer , some skills :**
 
  - Java
  - J2ee
