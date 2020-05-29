@@ -8,4 +8,21 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+> Spring & Java Developer , some skills :
+
+ - Java
+ - J2ee
+ - Spring MVC, Core , AOP , Data JPA
+ - Maven
+ - Hibernate
+ - MySql
+ - RestAPI 
+ - GraphQL
+ - Python
+ - C/C++/C#
+ - .Net
+ - Docker
+ - Git/GitLab/Github
+ - Linux OS ( Ubuntu , debian , raspbian )
+ - MapStruct 
+ - HTML5/CSS3/PHP/JavaScript/JQuery
