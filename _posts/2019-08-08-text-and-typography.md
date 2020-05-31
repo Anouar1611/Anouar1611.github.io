@@ -343,5 +343,5 @@ Wish you that you enjoy this blog !!
 
 
 
-{% twitter https://twitter.com/AnouarAsmai maxwidth=500 limit=3 %}
+
 
