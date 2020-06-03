@@ -32,8 +32,6 @@ linkedin:
   username: anouar-asmai
   
 
-plugins: ['jekyll-twitter-plugin']
-
 
 social:
   name: Anouar Asmai                 # it will shows as the copyright owner in Footer
