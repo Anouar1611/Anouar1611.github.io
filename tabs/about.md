@@ -12,15 +12,14 @@ title: About
 
  - Java
  - J2ee
- - Spring MVC, Core , AOP , Data JPA
+ - Spring MVC, Core , AOP , Data JPA , Boot
+ - Thymleaf
  - Maven
  - Hibernate
  - MySql
  - RestAPI 
  - GraphQL
- - Python
  - C/C++/C#
- - .Net
  - Docker
  - Git/GitLab/Github
  - Linux OS ( Ubuntu , debian , raspbian )
