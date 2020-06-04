@@ -328,7 +328,7 @@ That’s all for Spring AOP Example Tutorial, and you have seen how  AOP encapsu
 
 Here is the link of the Demo if you want to test it  :  [Demo AOP](https://github.com/Anouar1611/AopDemo.git)
 
-Wish you that you enjoy this blog !!
+I hope that you enjoy this blog !!
 
 
 
