@@ -10,7 +10,7 @@
 -
   type: twitter
   icon: 'fab fa-twitter'
-- url:'https://twitter.com/AnouarAsmai'
+- url:  'https://twitter.com/AnouarAsmai'
 
   type: email
   icon: 'fas fa-envelope'
