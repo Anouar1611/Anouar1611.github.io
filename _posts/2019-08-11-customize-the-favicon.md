@@ -10,10 +10,14 @@ toc: false
 
 # Introduction
 
- *What is DI?* : Dependency Injection (DI) is a design pattern used to implement IoC. It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways. Using DI, we move the creation and binding of the dependent objects outside of the class that depends on them.
+ *What is DI ?* : 
+   Dependency Injection (DI) is a design pattern used to implement IoC. It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways. Using DI, we move the creation and binding of the dependent objects outside of the class that depends on them.
  
+ ***
  
 > There is no problem that you don't understand the definition completely , let's understand this concept more !!
+
+***
 
 DI can be implemented in any programming language. The general concept behind dependency injection is called Inversion of Control.
 
@@ -23,23 +27,33 @@ Ideally Java classes should be as independent as possible from other Java classe
 
 If the Java class creates an instance of another class via the `new` operator, it cannot be used (and tested) independently from this class and this is called a hard dependency.
  
+ 
+***
+ 
 So , The Dependency Injection pattern involves 3 types of classes :
 
 ***Client Class***: The client class (dependent class) is a class which depends on the service class
+
 ***Service Class***: The service class (dependency) is a class that provides service to the client class.
+
 ***Injector Class***: The injector class injects the service class object into the client class.
+
+***
 
 The following figure illustrates the relationship between these classes:
 
 
+
 As you can see, the injector class creates an object of the service class, and injects that object to a client object. In this way, the DI pattern separates the responsibility of creating an object of the service class out of the client class. Inversion of Control can be achieved through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
 
+***
 
 
 # What Is Inversion of Control?
 
  Inversion of Control is a principle in software engineering by which the control of objects or portions of a program is transferred to a container or framework. It's most often used in the context of object-oriented programming.Inversion of Control can be achieved through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
  
+ ***
  
  # Simple Example of DI :
  
@@ -123,6 +137,10 @@ For example :
   > ***As a conclusion,*** tightly coupled code takes maintenance time and huge efforts and a loosely coupled code reduces maintenance and efforts
   
   
+  ***
+  
+  
+  
   # Advantages of Dependency Injection :
   
   
@@ -136,7 +154,7 @@ For example :
    
    - Increased module reusability.
    
-   
+  ***
    
    # Types of Dependency Injection :
    
@@ -149,7 +167,8 @@ For example :
 
    - ***Method Injection :*** In this type of injection, the client class implements an interface which declares the method(s) to supply the dependency and the injector uses this interface to supply the dependency to the client class.
    
-   
+***
+
  # Conclusion :
  
   `Dependency injection` can be useful when working with large applications because it relieves various code modules from the task of instantiating references to resources and allows dependencies , wa can also notice that DI is a powerful concept to create loosely couled objects , and Your code will be clean and more readable.
