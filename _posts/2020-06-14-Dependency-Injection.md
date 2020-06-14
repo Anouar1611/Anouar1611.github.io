@@ -16,7 +16,7 @@ toc: false
  
  ***
  
-> There is no problem that you don't understand the definition completely , let's understand this concept more !!
+> It's not a problem if you don't understand the definition completely , let's understand this concept more !!
 
 ***
 
@@ -95,7 +95,7 @@ But, by using DI, we can rewrite the example without using the `new` operator in
 
 
  
-> Let's see now what is Coupling in Java and what is the difference between Tightly Coupled Objects and Looselt Coupled Objects
+> Let's see now what is Coupling in Java and what is the difference between Tightly Coupled Objects and Loosely Coupled Objects
 
 
  Coupling in Java plays an important role when you work with Java Classes and Objects. It basically refers to the extent of knowledge one class knows about the other class.
@@ -132,10 +132,10 @@ For example :
 ```
 
 
- So, the `first` Car class and Wheel class are an example for a ***tightly coupled objects*** , it means that if you want to buy a Car which you couldn’t change the wheels because when the car was created , the wheel was created because it's a part of the car , then if you wanted to change the wheel , you must buy a new car , which not flexible and it took more effort. In the other side , the `second` Car class and Wheel class are ***loosely coupled object*** , it means you can the objects and its dependencies are loosely coupled because you can change one of them without changing the other , which means the loose coupling means that the objects are independent . With this type of coupling we can achieve our **Dependency Injection** .
+ So, the `first` Car class and Wheel class are an example for a ***tightly coupled objects*** , it means that if you want to buy a Car which you couldn’t change the wheels because when the car was created , the wheel was created because it's a part of the car , then if you wanted to change the wheel , you must buy a new car , which not flexible and it took more effort. In the other side , the `second` Car class and Wheel class are ***loosely coupled object*** , it means the objects and its dependencies are loosely coupled because you can change one of them without changing the other , which means the loose coupling means that the objects are independent . With this type of coupling we can achieve our **Dependency Injection** .
  
  
-  > ***As a conclusion,*** tightly coupled code takes maintenance time and huge efforts and a loosely coupled code reduces maintenance and efforts
+  > ***As a conclusion,*** tightly coupled code maintenance takes time and huge efforts which a loosely coupled code don't.
   
   
   ***
