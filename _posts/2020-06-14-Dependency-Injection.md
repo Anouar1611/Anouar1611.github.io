@@ -7,7 +7,7 @@ tags: [DI]
 toc: false
 ---
 
-![Dep]({{ "/assets/img/sample/dep.png"}})
+![Dep]({{ "/assets/img/sample/dep.jpeg"}})
 
 ---
 
