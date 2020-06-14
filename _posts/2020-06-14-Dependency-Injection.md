@@ -58,9 +58,10 @@ As you can see, the injector class creates an object of the service class, and i
  
  ***
  
- # Simple Example of DI :
+ # Simple Example of DI:
  
- Here's how you would create an object dependency in traditional programming :
+ 
+     Here's how you would create an object dependency in traditional programming :
  
  ```java
  
@@ -145,7 +146,7 @@ For example :
   
   
   
-  # Advantages of Dependency Injection :
+# Advantages of Dependency Injection :
   
   
    - DI allows a client the flexibility of being configurable. Only client's behavior is fixed.
@@ -160,7 +161,7 @@ For example :
    
   ***
    
-   # Types of Dependency Injection :
+# Types of Dependency Injection :
    
 
    As you have seen above, the injector class injects the service (dependency) to the client (dependent). The injector class injects dependencies broadly in three ways: through a constructor, through a property, or through a method.
@@ -173,7 +174,7 @@ For example :
    
 ***
 
- # Conclusion :
+# Conclusion :
  
   `Dependency injection` can be useful when working with large applications because it relieves various code modules from the task of instantiating references to resources and allows dependencies , wa can also notice that DI is a powerful concept to create loosely couled objects , and Your code will be clean and more readable.
   
