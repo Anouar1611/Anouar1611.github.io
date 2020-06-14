@@ -1,5 +1,5 @@
 ---
-title: what is Dependency Injection DI ?
+title: What is Dependency Injection DI ?
 author: Anouar Asmai
 date: 2020-06-14 12:34:00 +0800
 categories: [Blogging, Tutorial]
@@ -10,7 +10,8 @@ toc: false
 
 # Introduction
 
- *What is DI ?* : 
+   *What is DI ?* : 
+   
    Dependency Injection (DI) is a design pattern used to implement IoC. It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways. Using DI, we move the creation and binding of the dependent objects outside of the class that depends on them.
  
  ***
@@ -19,12 +20,11 @@ toc: false
 
 ***
 
-DI can be implemented in any programming language. The general concept behind dependency injection is called Inversion of Control.
+# Overview :
 
+  DI can be implemented in any programming language. The general concept behind dependency injection is called Inversion of Control.
 A Java class has a dependency on another class, if it uses an instance of this class. We call this a class dependency. For example, a class which accesses a logger service has a dependency on this service class.
-
 Ideally Java classes should be as independent as possible from other Java classes. This increases the possibility of reusing these classes and to be able to test them independently from other classes.
-
 If the Java class creates an instance of another class via the `new` operator, it cannot be used (and tested) independently from this class and this is called a hard dependency.
  
  
