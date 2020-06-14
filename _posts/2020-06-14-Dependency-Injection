@@ -32,17 +32,17 @@ If the Java class creates an instance of another class via the `new` operator, i
  
 So , The Dependency Injection pattern involves 3 types of classes :
 
-***Client Class***: The client class (dependent class) is a class which depends on the service class
+ -***Client Class***: The client class (dependent class) is a class which depends on the service class
 
-***Service Class***: The service class (dependency) is a class that provides service to the client class.
+ -***Service Class***: The service class (dependency) is a class that provides service to the client class.
 
-***Injector Class***: The injector class injects the service class object into the client class.
+ -***Injector Class***: The injector class injects the service class object into the client class.
 
 ***
 
 The following figure illustrates the relationship between these classes:
 
-
+![DI]({{ "/assets/img/sample/DI.png"}})
 
 As you can see, the injector class creates an object of the service class, and injects that object to a client object. In this way, the DI pattern separates the responsibility of creating an object of the service class out of the client class. Inversion of Control can be achieved through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
 
@@ -112,8 +112,9 @@ Coupling in Java is divided into two types, namely:
 *Let’s understand each one of them.*
 
 
-***Tight coupling :*** means classes and objects are dependent on one another.
-***Loose coupling :*** means reducing the dependencies of a class that uses the different classes directly
+ -***Tight coupling :*** means classes and objects are dependent on one another.
+ 
+ -***Loose coupling :*** means reducing the dependencies of a class that uses the different classes directly
 
 For example :
 
