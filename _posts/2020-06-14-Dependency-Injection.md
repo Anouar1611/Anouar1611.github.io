@@ -56,12 +56,12 @@ As you can see, the injector class creates an object of the service class, and i
 
  Inversion of Control is a principle in software engineering by which the control of objects or portions of a program is transferred to a container or framework. It's most often used in the context of object-oriented programming.Inversion of Control can be achieved through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
  
- ***
+---
  
- # Simple Example of DI:
+# Simple Example of DI:
  
  
-     Here's how you would create an object dependency in traditional programming :
+   Here's how you would create an object dependency in traditional programming :
  
  ```java
  
@@ -175,6 +175,8 @@ For example :
 ***
 
 # Conclusion :
+
+---
  
   `Dependency injection` can be useful when working with large applications because it relieves various code modules from the task of instantiating references to resources and allows dependencies , wa can also notice that DI is a powerful concept to create loosely couled objects , and Your code will be clean and more readable.
   
