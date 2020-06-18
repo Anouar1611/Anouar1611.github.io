@@ -47,12 +47,22 @@ tags: [GraphQL]
  
  
 # GraphQL Architecture
+
+![Dep]({{ "/assets/img/sample/GraphQL_Architecture-1024x461.png"}})
  
  Briefly ,in this section, we’ll walk you through 3 different kinds of architectures that include a GraphQL server:
 
    - GraphQL server ***with a connected database***
+   
+![gql]({{ "/assets/img/sample/graphql-architecture.png"}})
+
    - GraphQL server that ***integrates existing systems***
+   
+![gplq]({{ "/assets/img/sample/graphql-architecture2.png"}})
+
    - ***A hybrid approach of a connected database and third party or legacy systems*** that can all be accessed through the same GraphQL API
+   
+![gql1]({{ "/assets/img/sample/graphql-architecture3.png"}})
    
    
 # Schema Definition Language (SDL)
