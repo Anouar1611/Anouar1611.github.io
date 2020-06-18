@@ -73,7 +73,7 @@ tags: [GraphQL]
    
    Here is an example of how we can use the SDL to define a simple type called `User` :
    
- ```json
+ ```java
  
  type User {
           Id: ID!,
@@ -111,7 +111,7 @@ type Subscription {
   In this example , the GraphQL query contains the root field i.e. Users and query’s payload i.e. name and age.This query returns the user’s name and their age whose name matches to Anouar.
   
   
- ```json
+ ```java
 query{
        users(name:”Anouar”)  {
                         name
@@ -144,7 +144,7 @@ Mutation syntax starts with the keyword mutation. The below mutation creates a s
 
 Example:
 
-```json
+```java
 
 mutation {
   createUser(name: "Jack", age: 36) {
