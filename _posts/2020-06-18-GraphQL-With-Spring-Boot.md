@@ -6,6 +6,8 @@ categories: [Blogging, Demo]
 tags: [GraphQL]
 ---
 
+![Dep]({{ "/assets/img/sample/graphql.jpg"}})
+
 # Introduction 
 
 ---
