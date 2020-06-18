@@ -14,7 +14,7 @@ tags: [GraphQL]
   
   ***Let's see what the blog will show us !!
   
- # What Is GraphQL?
+# What Is GraphQL?
  
  ---
  
@@ -30,13 +30,13 @@ tags: [GraphQL]
    
  > Let's see some differences between REST and GraphQL 
  
- # Why GraphQL ?
+# Why GraphQL ?
  
  ---
  
  If you do not know about GraphQL then you are in the right place.GraphQL was developed to cope with the need for more flexibility and efficiency! It solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs.Also , thanks to the flexible nature of GraphQL, changes on the client-side can be made without any extra work on the server. Since clients can specify their exact data requirements, no backend engineer needs to make adjustments when the design and data needs on the frontend change.
  
- # REST vs GraphQL
+# REST vs GraphQL
  
  ---
  
@@ -46,7 +46,7 @@ tags: [GraphQL]
  
  
  
- # GraphQL Architecture
+# GraphQL Architecture
  
  Briefly ,in this section, we’ll walk you through 3 different kinds of architectures that include a GraphQL server:
 
@@ -55,7 +55,7 @@ tags: [GraphQL]
    - ***A hybrid approach of a connected database and third party or legacy systems*** that can all be accessed through the same GraphQL API
    
    
-  # Schema Definition Language (SDL)
+# Schema Definition Language (SDL)
   
   ---
   
@@ -144,6 +144,7 @@ mutation {
 }
 ```
 
+
 # Resolvers GraphQL :
 
 ---
@@ -151,7 +152,7 @@ mutation {
   Resolvers are functions written in the GraphQL server corresponding to each field in GraphQL query/mutations. When a request comes to the server, it will invoke resolvers’ functions corresponding to fields mentioned in the query.
   
  
- # GraphQL With Spring Boot :
+# GraphQL With Spring Boot :
  
  ---
  
