@@ -4,7 +4,6 @@ author: Anouar Asmai
 date: 2020-06-14 12:34:00 +0800
 categories: [Blogging, Tutorial]
 tags: [DI]
-toc: false
 ---
 
 ![Dep]({{ "/assets/img/sample/dep.jpeg"}})
