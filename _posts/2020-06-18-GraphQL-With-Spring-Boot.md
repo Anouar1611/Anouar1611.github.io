@@ -44,6 +44,22 @@ tags: [GraphQL]
  - **Endpoint:** In REST, each resource is identified by a URI. This makes the client obliged to know each endpoint. In GraphQL, all resources are identified by a single endpoint. There is no hassle of maintaining multiple URI’s.
  - **Data Fetching Strategy:** In GraphQL, we have only one endpoint. The client sends a single query with the required fields. This helps with improved network performance and avoids the over-fetching/under-fetching data problem.
  
+
+***Let's take a little look for some disavantages of GraphQL .
+
+# GraphQL disadvantages :
+
+---
+
+I'll not explain each point in detail , but it's a little look of some cons of GraphQL :
+
+ - Performance issues with complex queries
+ 
+ - Web caching complexity
+ 
+ - Takes a while to understand.
+ 
+ - Retrieving objects recursively is not supported in GraphQL
  
  
 # GraphQL Architecture
@@ -191,4 +207,65 @@ mutation {
 
 ---
 
-   Create a graphql folder under src/main/resources, and create a userql.graphqls file under that folder. Copy the above contents and paste it in the userql.graphqls file. Note that the name of the file could be any name of your choice. Just make sure to keep the file extension as .graphqls. We can have as many schema files as we require. Each type defined in the schema must have field resolvers. FieldResolverError results if the GraphQL server cannot find the resolver for any given field.
+   Create a graphql folder under ***src/main/resources***, and create a ***userql.graphqls*** file under that folder. Copy the above contents and paste it in the ***userql.graphqls*** file. Note that the name of the file could be any name of your choice. Just make sure to keep the file extension as .graphqls. We can have as many schema files as we require. Each type defined in the schema must have field resolvers. **FieldResolverError results if the GraphQL server cannot find the resolver for any given field**.
+   
+   So , Spring bean must implement GraphQL **Query Resolver**.Query resolver for Users may look like:
+   
+ ```java
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import com.sample.graphql.modal.User;
+import com.sample.graphql.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserQueryResolver implements GraphQLQueryResolver
+{
+    @Autowired
+    private UserService userService;
+    public User user (String name)
+    {
+        return userService.getUserDetailsByName(name);
+    }
+}
+```
+
+Then , mutation resolver to create User looks like :
+
+```java
+import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import com.sample.graphql.modal.User;
+import com.sample.graphql.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class StudentMutationResolver implements GraphQLMutationResolver
+{
+    @Autowired
+    private UserService userService;
+    public User createUser (User user) {
+        return userService.createUserRecord(user);
+    }
+}
+```
+
+### Root Query
+
+---
+
+  Query or Mutation objects are root GraphQL objects. They don’t have any associated data class. In such cases, the resolver classes would implement GraphQLQueryResolver or GraphQLMutationResolver. These resolvers will be searched for methods that map to fields in their respective root types.
+  
+**Now your GraphQL server is ready. You can test your API’s using Postman or the GraphiQL UI tool.**
+
+> We looked at a basic GraphQL Java example with Spring Boot !!
+
+
+# Conclusion :
+
+---
+
+  We cannot say that the GraphQL is always the best choice or the alternative of REST web services , both have advantages and disadvantages , you have to choose according to your need .
+  I hope this blog may help you to more understanding or discovring the GraphQL query language , don't forget to share it . Enjoy ! 😃😃
+
+
