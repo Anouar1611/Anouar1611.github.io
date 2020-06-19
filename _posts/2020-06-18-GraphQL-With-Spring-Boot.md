@@ -222,7 +222,7 @@ mutation {
  ```java
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.sample.graphql.modal.User;
-import com.sample.graphql.service.StudentService;
+import com.sample.graphql.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -243,7 +243,7 @@ Then , mutation resolver to create User looks like :
 ```java
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.sample.graphql.modal.User;
-import com.sample.graphql.service.StudentService;
+import com.sample.graphql.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
