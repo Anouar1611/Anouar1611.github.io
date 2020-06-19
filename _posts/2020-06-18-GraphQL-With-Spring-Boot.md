@@ -14,7 +14,8 @@ tags: [GraphQL]
 
   Before starting our blog , I should note that the REST web services are one of the most popular architectures to expose data from the backend.But , with a REST API, you would typically gather the data by accessing multiple endpoints .So , the question is, "Is GraphQL better than REST?" 😳 . 
   
-  ***Let's see what the blog will show us !!
+***Let's see what the blog will show us !!***
+
   
 # What Is GraphQL?
  
@@ -47,7 +48,8 @@ tags: [GraphQL]
  - **Data Fetching Strategy:** In GraphQL, we have only one endpoint. The client sends a single query with the required fields. This helps with improved network performance and avoids the over-fetching/under-fetching data problem.
  
 
-***Let's take a little look for some disavantages of GraphQL .
+***Let's take a little look for some disavantages of GraphQL .***
+
 
 # GraphQL disadvantages :
 
