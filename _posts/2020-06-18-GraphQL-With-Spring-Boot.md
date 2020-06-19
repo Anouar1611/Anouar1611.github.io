@@ -70,6 +70,8 @@ I'll not explain each point in detail , but it's a little look of some cons of G
  
 # GraphQL Architecture
 
+In general , this picture describe the  architecture of GraphQL :
+
 ![Dep]({{ "/assets/img/sample/GraphQL_Architecture-1024x461.png"}})
  
  Briefly ,in this section, we’ll walk you through 3 different kinds of architectures that include a GraphQL server:
