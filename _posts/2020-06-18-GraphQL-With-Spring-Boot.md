@@ -30,14 +30,16 @@ tags: [GraphQL]
    - ***Mutations:*** It's similar to a POST/PUT call in REST and is used by the client for any insert/update operation
    
    
-   
- > Let's see some differences between REST and GraphQL 
+  
  
 # Why GraphQL ?
  
  ---
  
  If you do not know about GraphQL then you are in the right place.GraphQL was developed to cope with the need for more flexibility and efficiency! It solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs.Also , thanks to the flexible nature of GraphQL, changes on the client-side can be made without any extra work on the server. Since clients can specify their exact data requirements, no backend engineer needs to make adjustments when the design and data needs on the frontend change.
+ 
+> Let's see some differences between REST and GraphQL
+
  
 # REST vs GraphQL
  
