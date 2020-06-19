@@ -104,7 +104,7 @@ In general , this picture describe the  architecture of GraphQL :
           name: String,
           age: Int!,
           mail: String!,
-          apps: [App!]
+          apps: [App!]!
 }
 
 type App {
