@@ -248,7 +248,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StudentMutationResolver implements GraphQLMutationResolver
+public class UserMutationResolver implements GraphQLMutationResolver
 {
     @Autowired
     private UserService userService;
