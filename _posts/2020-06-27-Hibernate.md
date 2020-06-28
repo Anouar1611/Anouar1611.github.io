@@ -1,5 +1,5 @@
 ---
-title: Hibernate ?
+title: Quick guide for Hibernate
 author: Anouar Asmai
 date: 2020-06-27 12:34:00 +0800
 categories: [Blogging, Tutorial]
