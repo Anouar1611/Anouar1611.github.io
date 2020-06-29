@@ -6,6 +6,8 @@ categories: [Blogging, Tutorial]
 tags: [Hibernate]
 ---
 
+![fram]({{ "/assets/img/sample/Hibernate-Framework.jpg"}})
+
 # Introduction
 
 ---
@@ -539,4 +541,6 @@ public class MainApp {
 
 ---
 
-This is a quick guide and blog for Hibernate , I can't notice all the termonologies of this framework because it's too much but it helps for more understanding this famous ORM framework , Enjoy 👍👍
+This is a quick guide and blog for Hibernate , I can't notice all the termonologies of this framework because it's too much but it helps for more understanding this famous ORM framework .
+Here is a simple application for how to use Hibernate  :  [Hibernate_Demo](https://github.com/Anouar1611/Simple-Hibernate-Spring-Demo.git)
+Enjoy 👍👍
