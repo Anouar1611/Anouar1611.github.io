@@ -6,7 +6,7 @@ categories: [Blogging, Demo]
 tags: [Rest_API]
 ---
 
-![Aop View]({{ "/assets/img/sample/aop.png"}})
+![REST]({{ "/assets/img/sample/rest.jpg"}})
 
 
 
@@ -43,7 +43,7 @@ An **API** for a website is code that allows two software programs to communicat
 Our example is a simple API for managing a school,here is the UML diagram that I was working on :
 
 
-![Aop View]({{ "/assets/img/sample/aop.png"}})
+![UML]({{ "/assets/img/sample/databaseerdiagram.png"}})
 
   
   Firstly, Spring Boot provides a very good support to building RESTful Web Services for enterprise applications. This chapter will explain in detail about building RESTful web services using Spring Boot.
@@ -118,6 +118,10 @@ Our example is a simple API for managing a school,here is the UML diagram that I
 ```
 
 >Note : You can go to Spring Initializr and create a project with below settings by adding your dependencies that you'll need like the following picture.
+
+
+
+![init]({{ "/assets/img/sample/init.png"}})
 
 
 Next Create the database name called user_database in MySQL database server and define connection properties in *School-API/src/main/resources/application.properties :*
