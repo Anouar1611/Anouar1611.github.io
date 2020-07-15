@@ -543,5 +543,5 @@ We can run the application in your IDE and test the Requests from Postman or Web
 
 ---
 
-This is a basic example for learn how to build a Restful API by using Spring Boot , Data & Web MVC .REST Architecture still usefull and stronger in the software development despite the creation of another Architecture such as GraphQL .I hope that you enjoy this blog 👍👍
+This is a basic example for learn how to build a Restful API by using Spring Boot , Data & Web MVC .REST Architecture still usefull and stronger in the software development despite the creation of another Architecture such as GraphQL .I hope that you enjoy this blog and you have more information about Restful APIs after read it , here is the link of the simple Api Application : [School-API](https://github.com/Anouar1611/School-API.git) 👍👍
 
