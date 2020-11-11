@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-**Spring & Java Developer , some skills :**
+**Software Developer , Blogger , some skills :**
 
  - Java
  - J2ee
@@ -19,6 +19,9 @@ title: About
  - MySql
  - RestAPI 
  - GraphQL
+ - DotNet Framework
+ - Python
+ - AI
  - C/C++/C#
  - Docker
  - Git/GitLab/Github
