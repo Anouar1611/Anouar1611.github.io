@@ -10,7 +10,7 @@
 
 title: Anouar Asmai                        # the main title
 
-tagline: Spring & Java Developer  # it will display as the sub-title
+tagline: Software Developer, Blogger💻  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -56,7 +56,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Africa/Casablanca
+timezone: Europe/Berlin
 
 google_analytics:
   # Fill with your Google Analytics ID
