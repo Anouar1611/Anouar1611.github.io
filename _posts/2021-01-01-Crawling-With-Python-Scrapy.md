@@ -22,11 +22,11 @@ But, first of all, we must learn what is the difference between Web Crawling and
 
 ---
 
-     - ***Web Crawling*** is the process of using `crawl agents` or `spiders` to read, navigates web pages and store all of the content of these web pages for indexing and
+-**Web Crawling** is the process of using `crawl agents` or `spiders` to read, navigates web pages and store all of the content of these web pages for indexing and
 pulling content, it means that crawlers extract data or save the keywords, the images and the URLs of web pages and store/index them. This process is used by the majority 
 of Search Engines because it helps it to gives you the information and the page of this information which you're looking for by crawling all the contents of the web pages and index them on the Search engine.    
 
-     - ***Web Scraping*** is the process of extracting structured data and information from a web page, e.g. to collect some specific information like product details, prices, categories... After that, these data can be extracted to  
+-**Web Scraping** is the process of extracting structured data and information from a web page, e.g. to collect some specific information like product details, prices, categories... After that, these data can be extracted to  
 a file or a database.
 
 
@@ -127,12 +127,14 @@ There are two possibilities to to crawl with your spider :
   - The second one is ***scrapy.crawler.CrawlerProcess*** : This class extends **CrawlerRunner** by adding support for starting a reactor, configuring the logging and setting shutdown handlers. This class is the one used by all Scrapy commands.
   
   
- > *You are now asking about what's the reactor ?*
+ > *I am sure you are now asking about what is the **Reactor** ?*
  
  
-  The answer is that `Reactor` is an the central nervous system of a Twisted application, it is an event loop which waits for events, when an event occurs, it triggers the appropriate event handler function and will perform your actions only in response to events.
+   The answer is that `Reactor` is an the central nervous system of a Twisted application, it is an event loop which waits for events, when an event occurs, it triggers the appropriate event handler function and will perform your actions only in response to events.
 Because of the crawling request-response process, using an asynchronous event loop is the best way to handle events unlike the traditional sequetial programs. On top of that, it could be used to scheduling, threading and listening for connections from external machines.
-**Remember that reactor is not restartable, that means if you want to run it more times without finished the execution of the script or interrupt it, it will raise an error because the `reactor.run()` method cannot restart.**
+
+**Remember that reactor is not restartable, that means if you want to run it more times without finished the execution of the script or interrupt it, it will raise an error because the ``reactor.run()`` method cannot restart.**
+
 
 ### Examples for using CrawlerProcess and CrawlerRunner
 
