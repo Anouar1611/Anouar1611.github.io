@@ -98,7 +98,7 @@ class ProductSpider(scrapy.Spider):
             # Here it's up to you to store your data on a file or database or doing some other parts of code
 ```
 
-  - So, to understand what heppened under the hood, the superclass ``scrapy.Spider`` just provides a default ``start_requests()`` implementation which sends requests from the ``start_urls`` spider attribute and calls the spider method ```parse()`` for each of the resulting requests. In other way, ``start_requests()`` is a generator function which returns a generator of **Request** objects which are scheduled by Scrapy. Upon receiving a response for each one, your spider 
+  - So, to understand what heppened under the hood, the superclass ``scrapy.Spider`` just provides a default `start_requests()` implementation which sends requests from the ``start_urls`` spider attribute and calls the spider method ``parse()`` for each of the resulting requests. In other way, ``start_requests()`` is a generator function which returns a generator of **Request** objects which are scheduled by Scrapy. Upon receiving a response for each one, your spider 
 instanciates a **Response** objects and calls the callback method associated with the request and passing the response as an argument.
 
 
