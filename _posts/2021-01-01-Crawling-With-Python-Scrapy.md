@@ -3,7 +3,7 @@ title: Crawling with Python Scrapy
 author: Anouar Asmai
 date: 2021-01-02 02:53:00 +0800
 categories: [Blogging, Demo]
-tags: [Python Scrapy]
+tags: [Python_Scrapy]
 ---
 
 
