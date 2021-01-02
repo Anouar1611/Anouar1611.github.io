@@ -7,6 +7,7 @@ tags: [Python Scrapy]
 ---
 
 
+![Scrapy]({{ "/assets/img/sample/scrapy.png"}})
 
 
 # Introduction 
