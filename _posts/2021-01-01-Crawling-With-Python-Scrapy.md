@@ -25,11 +25,14 @@ But, first of all, we must learn what is the difference between Web Crawling and
 
 - **Web Crawling** is the process of using `crawl agents` or `spiders` to read, navigates web pages and store all of the content of these web pages for indexing and
 pulling content, it means that crawlers extract data or save the keywords, the images and the URLs of web pages and store/index them. This process is used by the majority 
-of Search Engines because it helps it to gives you the information and the page of this information which you're looking for by crawling all the contents of the web pages and index them on the Search engine.    
+of Search Engines because it helps it to gives you the information and the page of this information which you're looking for by crawling all the contents of the web pages and index them on the Search engine.
+
+![Scrapy]({{ "/assets/img/sample/web_crawler.jpg"}})
 
 - **Web Scraping** is the process of extracting structured data and information from a web page, e.g. to collect some specific information like product details, prices, categories... After that, these data can be extracted to  
 a file or a database.
 
+![Scrapy]({{ "/assets/img/sample/web scraping.png"}})
 
 - There are some similarities bewtween Web Crawling and Web Scraping, but I think the main difference is Web Scraping has much more focused purpose while Web Crawler scan, track and extract all data on a website. 
      
@@ -121,7 +124,7 @@ instanciates a **Response** objects and calls the callback method associated wit
 ```
   And with CSS selector :
 
-```python
+```console
 >>> response.css('div').get()
 ['<div>Quotes to Scrape</div>']
 
