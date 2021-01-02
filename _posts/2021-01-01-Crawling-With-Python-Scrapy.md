@@ -162,17 +162,21 @@ A simple example of using the `scrapy.crawler.CrawlRunner` :
 from twisted.internet import reactor
 from scrapy.crawler import CrawlerRunner
 
-class MySpider1(scrapy.Spider):
+class MySpider(scrapy.Spider):
     # Your first spider definition
  
 
 runner = CrawlerRunner()
 runner.crawl(MySpider)
-d = runner.join()
-d.addBoth(lambda _: reactor.stop())
+deferred = runner.join()
+deferred.addBoth(lambda _: reactor.stop())
 reactor.run() # the script will block here until all crawling jobs are finished
 
 ```
+
+- The `deferred` object is the return value of `join()` method when all the crawlers have completed their execution.
+
+- After that, you should shutdown your reactor, that's why you must add a callback method to `addBoth()` deferred's method wich calls  `reactor.stop()` to stop the reactor.
 
 
 ### Conclusion
