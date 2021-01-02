@@ -56,7 +56,7 @@ scrapy startproject tutorial
 ```
 However, my project directory will be created with the following structure :
 
-```console 
+``` 
 tutorial/
     scrapy.cfg            # it's a configuration file
 
@@ -143,7 +143,7 @@ Because of the crawling request-response process, using an asynchronous event lo
 
 A simple example of using the `scrapy.crawler.CrawlProcess` :
 
-```pyhton
+```python
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
@@ -158,7 +158,7 @@ process.start() # the script will block here until all crawling jobs are finishe
 
 A simple example of using the `scrapy.crawler.CrawlRunner` :
 
-```pyhton
+```python
 from twisted.internet import reactor
 from scrapy.crawler import CrawlerRunner
 
