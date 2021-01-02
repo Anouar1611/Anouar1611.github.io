@@ -31,7 +31,7 @@ of Search Engines because it helps it to gives you the information and the page 
 a file or a database.
 
 
-  There are some similarities bewtween Web Crawling and Web Scraping, but I think the main difference is Web Scraping has much more focused purpose while Web Crawler scan, track and extract all data on a website. 
+- There are some similarities bewtween Web Crawling and Web Scraping, but I think the main difference is Web Scraping has much more focused purpose while Web Crawler scan, track and extract all data on a website. 
      
     
 ## Scrapy 
@@ -40,7 +40,7 @@ a file or a database.
 
   `Scrapy` is a Web spider or framework for crawling and fetching data from several websites. It can do big jobs very easily and quickly. This web famework crawl a group of URLs in no more than a minute and does it very smoothly as it uses Twister which works asynchronously for concurrency.
  
- > If you want to get more about the Twisted API here is the link : [Twisted](https://twistedmatrix.com/documents/current/index.html)
+ > If you want to get more about the Twisted API here is the link : [Twisted API](https://twistedmatrix.com/documents/current/index.html)
  
  
    There are some other powerful libraries to scrap data from web pages like `BeautifulSoup` but it's just for small projects.
