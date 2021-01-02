@@ -99,6 +99,38 @@ class ProductSpider(scrapy.Spider):
 instanciates a **Response** objects and calls the callback method associated with the request and passing the response as an argument.
 
 
+  - Noticed that after receiving the **Response** objects, we can use `selectors` because they ***select*** certain parts of the HTML document specified either by XPath or CSS expressions.
+  
+  
+### Scrapy Selectors :
+
+---
+
+  - ***XPath*** is a language for selecting nodes in XML documents, which can also be used with HTML. 
+  
+  - ***CSS** is a language for applying styles to HTML documents. It defines selectors to associate those styles with specific HTML elements.
+
+  - For quering the response objects, we must use *XPath* or *CSS* selectors, here are some simple examples for using both of them :
+  
+```python
+>>> response.xpath('//div').get()
+[<Selector xpath='//div' data='<div>Content to scrap here</div>'>]
+
+>>> response.xpath('//div/text()').get()
+'Content to scrap here'
+```
+  And with CSS selector :
+
+```python
+>>> response.css('div').get()
+['<div>Quotes to Scrape</div>']
+
+>>> response.css('div::text').get()
+'Content to scrap here'
+```
+
+  - `::text` to the CSS query, to mean we want to select only the text elements directly inside <div> element. ``get()`` method returns a single result, if there are several matches, content of a first match is returned. Returns `None` if there is no matches.
+
 
 
   - However, for the `items.py`, it acts like your model for our data, it could be something like that :
