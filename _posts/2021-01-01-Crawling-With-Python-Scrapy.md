@@ -108,7 +108,7 @@ instanciates a **Response** objects and calls the callback method associated wit
 
   - ***XPath*** is a language for selecting nodes in XML documents, which can also be used with HTML. 
   
-  - ***CSS** is a language for applying styles to HTML documents. It defines selectors to associate those styles with specific HTML elements.
+  - ***CSS*** is a language for applying styles to HTML documents. It defines selectors to associate those styles with specific HTML elements.
 
   - For quering the response objects, we must use *XPath* or *CSS* selectors, here are some simple examples for using both of them :
   
