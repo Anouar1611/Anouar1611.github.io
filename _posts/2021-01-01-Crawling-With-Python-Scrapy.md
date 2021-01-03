@@ -218,7 +218,7 @@ reactor.run() # the script will block here until all crawling jobs are finished
 
 ---
 
-  Scrapy is a powerful and complete package for downloading web pages, processing them and save it in files and databases, but there are some other librairies that doing a pretty job for scraping and deserving to be learned as well.
+  Scrapy is a powerful and complete package for downloading web pages, processing them and save it in files and databases, but there are some other librairies that are doing a pretty job for scraping and deserving to be learned as well.
 Some of the disadvantages of Scrapy is that it requires more time to learn and understand how it works, but once learned, the process of making web crawlers will be easy. I hope you like my blog despite I didn't explain all the boundaries of Scrapy but I talked about the relevant points. Enjoy it 😃😃 !!
 
 
