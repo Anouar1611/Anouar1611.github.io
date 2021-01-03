@@ -124,7 +124,7 @@ instanciates a **Response** objects and calls the callback method associated wit
 ```
   And with CSS selector :
 
-```console
+```python
 >>> response.css('div').get()
 ['<div>Quotes to Scrape</div>']
 
