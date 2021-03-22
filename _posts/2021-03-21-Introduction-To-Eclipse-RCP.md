@@ -16,7 +16,7 @@ So, the Eclipse IDE is just a specific Eclipse application that provides develop
 software component called ***plug-in*** which is extensible to be used by other plug-ins.
 
 
-> ***I hope this definition was clear, now we could take a look for why we should build an Eclipse RCP application.
+> ***I hope this definition was clear, now we could take a look for why we should build an Eclipse RCP application.***
 
 
 - Using Eclipse RCP, we can mention the extensebility will allow us to create an open platforms and we can create our own feature-rich and professional application quickly under multiple platforms as well as RCP provides us a high quality of components that are able for reuse.
