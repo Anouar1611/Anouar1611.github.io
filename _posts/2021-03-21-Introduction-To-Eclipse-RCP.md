@@ -6,7 +6,6 @@ categories: [Blogging, Tutorial]
 tags: [Eclipse RCP]
 ---
 
-![fram]({{ "/assets/img/sample/Hibernate-Framework.jpg"}})
 
 # Introduction
 
