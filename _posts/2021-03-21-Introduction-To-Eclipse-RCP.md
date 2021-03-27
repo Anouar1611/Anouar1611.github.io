@@ -3,7 +3,7 @@ title: Introduction to Eclipse RCP
 author: Anouar Asmai
 date: 2021-03-26 16:47 +0800
 categories: [Blogging, Tutorial]
-tags: [Eclipse RCP]
+tags: [Eclipse_RCP]
 ---
 
 
