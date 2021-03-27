@@ -1,7 +1,7 @@
 ---
 title: Introduction to Eclipse RCP
 author: Anouar Asmai
-date: 2021-03-21 16:47 +0800
+date: 2021-03-26 16:47 +0800
 categories: [Blogging, Tutorial]
 tags: [Eclipse RCP]
 ---
@@ -33,7 +33,7 @@ without knowing each other.
 
 # Basic Elements of the Eclipse user interface:
 
-figure1RCP
+![rcp]({{ "/assets/img/sample/eclipse.png"}})
 
 - **Workbench Window**: The broad container for all windows.
 - **View**: A visual container to display resources of a particular type. Typically, a view contains a data grid or tree structure. In Figure 1, the tasks view is an example of a view that is used within the Java perspective.
@@ -58,15 +58,14 @@ other fundamental elements of Eclipse which are not provided with Plug-in Develo
 
 ---
 
-figure2: EclipseRCPfigure2
+![rcp]({{ "/assets/img/sample/eclipseRCPfigure2.png"}})
 
 
-- All of Eclipse's functionality is implemented through the use of plug-ins. A ***plug-in*** is the base building block that developers use to add new capabilities and functionality to the
-environment. This plug-in have to define a set of ***extensions***, with which you can add feature or extend from other existing extensions, as well as, each of these extensions is defined within a plug-in's manifest file. The ***Eclipse runtime*** is responsible for managing the lifecycle of a plug-in within a workbench. 
+- All of Eclipse's functionality is implemented through the use of plug-ins. A ***plug-in*** is the base building block that developers use to add new capabilities and functionality to the environment. This plug-in have to define a set of ***extensions***, with which you can add feature or extend from other existing extensions, as well as, each of these extensions is defined within a plug-in's manifest file. The ***Eclipse runtime*** is responsible for managing the lifecycle of a plug-in within a workbench. 
 
 
 
-Figure3: SWT&JFace
+![rcp]({{ "/assets/img/sample/SWT&JFace.png"}})
 
 
 - ***JFace*** : briefly is a UI toolkit with classes for handling many common UI programming tasks and provides helper classes for developing UI features. Moreover, JFace is designed to provide common application UI functionality on top of the SWT library.
@@ -87,19 +86,19 @@ solutions that "feel" like native desktop applications.
 
 - This figure shows, choose the name of the project and press next:
 
-figure1
+![rcp]({{ "/assets/img/sample/figure1.png"}})
 
 - After, press next:
 
-figure2
+![rcp]({{ "/assets/img/sample/figure2.png"}})
 
 - Now, select **Eclipse 4 RCP application** and click on **Finish**:
 
-Figure3
+![rcp]({{ "/assets/img/sample/figure3.png"}})
 
 - This ***Overview*** tab will be shown like this :
 
-Figure4
+![rcp]({{ "/assets/img/sample/figure4.png"}})
 
 
 
@@ -107,7 +106,7 @@ Figure4
 Eclipse runtime will manage. The **plug-in manifest** for any project is located within the
 project's root directory and is called ***plugin.xml***.
 
-figure5
+![rcp]({{ "/assets/img/sample/figure5.png"}})
 
 
 Indeed, the ***plugin.xml*** allows you to view the XML that each section of the editor
