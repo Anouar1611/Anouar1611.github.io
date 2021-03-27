@@ -80,7 +80,7 @@ solutions that "feel" like native desktop applications.
 
 - You have first to open your Eclipse IDE and select **Window > Open Perspective > Other** from the menu bar. Then select ***Plug-in Development***. 
 
-> ***Plug-in Development*** : is what you need for developing Eclipse Plug-in projects. So you have to install PDE first for building an RCP development. If you need to install it, here is the link for you: https://www.eclipse.org/rap/downloads/, and choose **Download an Eclipse IDE package with RAP Tools included**.
+> ***Plug-in Development*** : is what you need for developing Eclipse Plug-in projects. So you have to install PDE first for building an RCP development. If you need to install it, here is the link for you: [RAP](https://www.eclipse.org/rap/downloads/), and choose **Download an Eclipse IDE package with RAP Tools included**.
 
 - This figure shows, choose the name of the project and press next:
 
@@ -122,7 +122,7 @@ generates.
 
 Eclipse RCP Development is an exciting paradigm intended to developers to have a single cross-platform environment to create highly-interactive business applications. But it's not that easy to learn how to build an RCP Application because there are several instructions to follow and much knowledge to learn about it. I didn't mention many things concerning the RCP Development but I has just clarified some basics for you if you are the first time using it, and I will talk about many other things on my next blogs on that concern (RCP).
 
-Here is the link of my blog under Medium : https://anouar-asmai0.medium.com/introduction-to-eclipse-rcp-711cd42ee5de
+Here is the link of my blog under Medium : [Eclipse_RCP](https://anouar-asmai0.medium.com/introduction-to-eclipse-rcp-711cd42ee5de).
 
 I hope you enjoyed reading my simple and brief blog :)!!
  
