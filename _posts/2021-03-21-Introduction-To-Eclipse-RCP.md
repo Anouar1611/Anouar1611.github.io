@@ -36,7 +36,7 @@ without knowing each other.
 ![rcp]({{ "/assets/img/sample/eclipse.png"}})
 
 - **Workbench Window**: The broad container for all windows.
-- **View**: A visual container to display resources of a particular type. Typically, a view contains a data grid or tree structure. In Figure 1, the tasks view is an example of a view that is used within the Java perspective.
+- **View**: A visual container to display resources of a particular type. Typically, a view contains a data grid or tree structure. In the figure, the tasks view is an example of a view that is used within the Java perspective.
 - **Short Cut Bar**: A set of icons that enables the user to quickly access different perspectives.
 - **Menu Bar**: A set of content-sensitive actions that gives the user the ability to execute some predefined function.
 - **Tool Bar**: A set of context-sensitive actions that enables the user to execute some predefined function. All the items found within the toolbar appear within the menu bar.
@@ -47,8 +47,7 @@ without knowing each other.
 
 ---
 
-Traditional Eclipse plug-in development is focused on plugging into an IDE. Unlike RCP Development, You have then the opportunity to define more of the look and feel, the branding, and 
-other fundamental elements of Eclipse which are not provided with Plug-in Development. Therefore, RCP development like expands the boundaries of your application and pushes you to think about frameworks of your own and how others will integrate into your product.
+Traditional Eclipse plug-in development is focused on plugging into an IDE. Unlike RCP Development, You have then the opportunity to define more of the look and feel, the branding, and other fundamental elements of Eclipse which are not provided with Plug-in Development. Therefore, RCP development like expands the boundaries of your application and pushes you to think about frameworks of your own and how others will integrate into your product.
 
 
 > **Note**: We can slice/dice the RCP itself or any other plug-in set to suit our needs.
