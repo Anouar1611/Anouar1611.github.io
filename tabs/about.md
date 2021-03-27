@@ -8,18 +8,18 @@ title: About
 # MIT License
 ---
 
-**Software Developer , Blogger , some skills :**
+**Currently a Junior Software Engineer at Telespazio Germany GmbH 🛰🛰, interested on software programming, Java 11 OCP certificate enthusiast🤓, and Blogger of course 😀.
+Some of my main skills :**
 
  - Java
  - J2ee
  - Spring MVC, Core , AOP , Data JPA , Boot
- - Thymleaf
+ - Eclipse IDE, Intellij idea
  - Maven
  - Hibernate
  - MySql
  - RestAPI 
  - GraphQL
- - DotNet Framework
  - Python
  - AI
  - C/C++/C#
