@@ -45,7 +45,6 @@ without knowing each other.
 
 # The difference between Eclipse Plug-in Development and RCP Development :
 
----
 
 Traditional Eclipse plug-in development is focused on plugging into an IDE. Unlike RCP Development, You have then the opportunity to define more of the look and feel, the branding, and other fundamental elements of Eclipse which are not provided with Plug-in Development. Therefore, RCP development like expands the boundaries of your application and pushes you to think about frameworks of your own and how others will integrate into your product.
 
