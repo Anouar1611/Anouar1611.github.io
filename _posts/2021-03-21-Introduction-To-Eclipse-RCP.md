@@ -6,7 +6,7 @@ categories: [Blogging, Tutorial]
 tags: [Eclipse_RCP]
 ---
 
-
+![rcp]({{ "/assets/img/sample/rcp.png"}})
 
 # Introduction
 
