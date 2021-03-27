@@ -12,9 +12,9 @@ title: About
 Some of my main skills :**
 
  - Java
- - J2ee
- - Spring MVC, Core , AOP , Data JPA , Boot
+ - Spring Framework
  - Eclipse IDE, Intellij idea
+ - Agile
  - Maven
  - Hibernate
  - MySql
@@ -28,3 +28,5 @@ Some of my main skills :**
  - Linux OS ( Ubuntu , debian , raspbian )
  - MapStruct 
  - HTML5/CSS3/PHP/JavaScript/JQuery
+ - Apache Spark
+ - JUnit
