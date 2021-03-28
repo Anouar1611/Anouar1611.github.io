@@ -111,7 +111,7 @@ Indeed, the ***plugin.xml*** allows you to view the XML that each section of the
 generates. 
 
 
-- Now, we can mention some **Tags**, each one of them has its functionality, we will discuss about that on the last blog as well as many other things concerning the RCP Applications.
+- Now, we can mention some **Tags**, each one of them has its functionality, we will discuss about that in the next blog as well as many other things concerning the RCP Applications.
 
 
 
