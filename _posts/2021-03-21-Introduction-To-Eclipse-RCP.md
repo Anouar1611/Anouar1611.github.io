@@ -22,8 +22,7 @@ software component called ***plug-in*** which is extensible to be used by other 
 # The major Pros of Eclipse RCP:
 
 * The platform is mainly designed for modularity and extensibility.
-* Extensions based on the Eclipse RCP platform can work together without
-without knowing each other. 
+* Extensions based on the Eclipse RCP platform can work together without knowing each other. 
 * Applications can be delivered in different configurations, as well as plug-ins that were initially developed separately can later be combined into one application.
 * Using Eclipse RCP, we can mention the extensebility will allow us to create an open platforms and we can create our own feature-rich and professional application quickly under multiple platforms as well as RCP provides us a high quality of components that are able for reuse.
 * Eclipse RCP provides base components for graphical applications that were common and have been proven in many use cases encountered by developers before.
