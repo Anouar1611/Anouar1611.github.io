@@ -10,7 +10,7 @@
 
 title: Anouar Asmai                        # the main title
 
-tagline: Java & Spring Developer🤓/Junior Software Engineer at Telespazio Germany🖥🖥, Blogger💻  # it will display as the sub-title
+tagline: Java & Spring Developer🤓/Software Developer at heyconnect GmbH, Blogger💻  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -46,7 +46,7 @@ social:
     - https://github.com/Anouar1611       # change to your github homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/Anouar Asm
-    - https://www.linkedin.com/in/anouar-asmai
+    - https://www.linkedin.com/in/a-asmai/
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
