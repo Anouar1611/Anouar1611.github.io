@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-**Currently a Junior Software Engineer at Telespazio Germany GmbH 🛰🛰, interested on software programming, Java 11 OCP certificate enthusiast🤓, and Blogger of course 😀.
+**Currently a Software Developer at heyconnect GmbH 🛰🛰, interested on software programming, Java 11 OCP certificate enthusiast🤓, and Blogger of course 😀.
 Some of my main skills :**
 
  - Java
@@ -21,8 +21,6 @@ Some of my main skills :**
  - RestAPI 
  - GraphQL
  - Python
- - AI
- - C/C++/C#
  - Docker
  - Git/GitLab/Github
  - Linux OS ( Ubuntu , debian , raspbian )
