@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-**Currently a Software Developer at heyconnect GmbH 🛰🛰, interested on software programming, Java 11 OCP certificate enthusiast🤓, and Blogger of course 😀.
+**Currently a Software Developer at heyconnect GmbH, interested on software programming, Java 11 OCP certificate enthusiast🤓, and Blogger of course 😀.
 Some of my main skills :**
 
  - Java
