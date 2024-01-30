@@ -10,7 +10,7 @@
 
 title: Anouar Asmai                        # the main title
 
-tagline: Java & Spring Developer🤓/Software Developer at heyconnect GmbH, Blogger💻  # it will display as the sub-title
+tagline: Java/Kotlin & AWS Developer🤓/ Software Developer at heyconnect GmbH, Blogger💻  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -18,7 +18,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'http://anouarasmai.me'
+url: 'https://anouarasmai.site'
 
 author: Anouar Asmai                  # change to your full name
 
@@ -42,6 +42,7 @@ social:
   email: anouar.asmai0@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://anouarasmai.site
     - https://twitter.com/AnouarAsmai      # change to your twitter homepage
     - https://github.com/Anouar1611       # change to your github homepage
     # Uncomment below to add more social links
